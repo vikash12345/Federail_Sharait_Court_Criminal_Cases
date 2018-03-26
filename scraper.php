@@ -10,7 +10,7 @@ I added daily schedules for scrape updated data regular
 //totalpages is for future if you saw there is more than 36 pages just change number in totalpages=	;
 
 
-$totalpages   = 1;
+$totalpages   = 36;
 
 for($page = 1;$page <= $totalpages; $page++)
 	{
