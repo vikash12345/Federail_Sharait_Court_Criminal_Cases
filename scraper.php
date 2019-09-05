@@ -10,11 +10,14 @@ I added daily schedules for scrape updated data regular
 //totalpages is for future if you saw there is more than 36 pages just change number in totalpages=	;
 
 
+
+
+
 $totalpages   = 36;
 
 for($page = 1;$page <= $totalpages; $page++)
 	{
-		$link	=	'http://federalshariatcourt.gov.pk/c'.$page.'.html';
+		$link	=	'http://web.archive.org/web/20180901122908/http://federalshariatcourt.gov.pk/c'.$page.'.html';
 		$html	=	file_get_html($link);
 		foreach($html->find("/html/body/table/tbody/tr[3]/td/table[1]/tbody/tr[2]/td[2]/table[2]/tbody/tr/td/table/tbody/tr") as $element)
 		{
